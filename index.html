@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+    <header>
+            <nav>
+                <button class="darkMode"><img src="./assets/icons/modeSwitcher.svg" alt="mode switcher"></button>
+            </nav>
+        <form>
+            <div class="inputSection">
+                <label for="day">
+                    <span class="inputLabel">DAY</span>
+                    <input type="number" id="day" class="input" required>
+                    <p class="error"></p>
+                </label>
+                
+                <label for="month">
+                    <span class="inputLabel">MONTH</span>
+                    <input type="number" id="month" class="input" required>
+                    <p class="error"></p>
+                </label>
+                
+                <label for="year">
+                    <span class="inputLabel">YEAR</span>
+                    <input type="number" id="year" class="input" required>
+                    <p class="error"></p>
+                </label>
+            </div>
+
+            <div class="lowerSection">
+                <hr>
+                <button type="submit" class="submitBtn"><img src="./assets/images/icon-arrow.svg" alt="sumbit button"></button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <h1 class="output">
+            <span id="yearDisplay" class="year">--</span>Years
+            <br>
+            <span id="monthDisplay">--</span>months
+            <br>
+            <span id="dayDisplay">--</span>days
+        </h1>
+    </main>
+</body>
+</html>
