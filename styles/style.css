@@ -120,11 +120,80 @@ body main .output span {
   margin-right: 0.5rem;
 }
 
-.errorInputDisplay {
-  color: hsl(0, 100%, 67%);
-  outline: 1px hsl(0, 100%, 67%) solid;
+.errorInputDisplay .inputLabel {
+  color: hsl(0, 100%, 67%) !important;
+}
+.errorInputDisplay .input {
+  outline: 1px hsl(0, 100%, 67%) solid !important;
 }
 
 .errorText {
   color: hsl(0, 100%, 67%);
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+.dark nav .darkMode {
+  background-color: white;
+}
+.dark form .inputSection label input {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    padding: 1rem;
+  }
+  body {
+    padding: 1rem;
+  }
+  body header nav {
+    top: -10%;
+  }
+  body header nav button {
+    width: 2rem;
+    height: 2rem;
+  }
+  body header form {
+    margin-top: 10%;
+    gap: 2.5rem;
+  }
+  body header form .inputSection {
+    width: 100%;
+    gap: 1rem;
+  }
+  body header form .inputSection label .inputLabel {
+    font-size: 0.7rem;
+  }
+  body header form .inputSection label .input {
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+  }
+  body header form .lowerSection {
+    position: relative;
+  }
+  body header form .lowerSection hr {
+    color: hsl(0, 1%, 44%);
+    background-color: hsl(0, 1%, 44%);
+    width: 100%;
+  }
+  body header form .lowerSection .submitBtn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 4rem;
+    height: 4rem;
+  }
+  body header form .lowerSection .submitBtn img {
+    width: 2rem;
+    height: 2rem;
+  }
+  body main .output {
+    font-size: 3.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

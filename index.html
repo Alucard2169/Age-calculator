@@ -5,33 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/app.js" defer></script>
     <title>Age Calculator</title>
 </head>
-<body>
+<body id="body">
 
     <header>
             <nav>
-                <button class="darkMode"><img src="./assets/icons/modeSwitcher.svg" alt="mode switcher"></button>
+                <button class="darkMode" id="modeBtn"><img src="./assets/icons/modeSwitcher.svg" alt="mode switcher"></button>
             </nav>
-        <form>
+        <form id="form">
             <div class="inputSection">
-                <label for="day">
+                <label for="day" id="dayLabel">
                     <span class="inputLabel">DAY</span>
-                    <input type="number" id="day" class="input" required>
-                    <p class="error"></p>
+                    <input type="number" id="day" class="input" placeholder="DD" required>
+                    <p class="error" id="dayError"></p>
                 </label>
                 
-                <label for="month">
+                <label for="month" id="monthLabel">
                     <span class="inputLabel">MONTH</span>
-                    <input type="number" id="month" class="input" required>
-                    <p class="error"></p>
+                    <input type="number" id="month" class="input" placeholder="MM" required>
+                    <p class="error" id="monthError"></p>
                 </label>
                 
-                <label for="year">
-                    <span class="inputLabel">YEAR</span>
-                    <input type="number" id="year" class="input" required>
-                    <p class="error"></p>
-                </label>
+<label for="year" id="yearLabel">
+    <span class="inputLabel">YEAR</span>
+    <input type="number" id="year" class="input" pattern="\d{4}" placeholder='YYYY' required>
+    <p class="error" id="yearError"></p>
+</label>
+
             </div>
 
             <div class="lowerSection">

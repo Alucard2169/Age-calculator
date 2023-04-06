@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;0,800;1,700;1,800&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -149,10 +150,120 @@ body {
 
 
 .errorInputDisplay {
-    color: hsl(0, 100%, 67%);
-    outline: 1px hsl(0, 100%, 67%) solid;
+    .inputLabel {
+        color: hsl(0, 100%, 67%) !important;
+    }
+
+    .input {
+        outline: 1px hsl(0, 100%, 67%) solid !important;
+    }
+
 }
 
 .errorText {
     color: hsl(0, 100%, 67%);
+}
+
+
+.dark {
+    background-color: black;
+
+    color: white;
+
+    nav {
+        .darkMode {
+            background-color: white;
+        }
+    }
+
+    form {
+        .inputSection {
+            label {
+                input {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    html,
+    body {
+        padding: 1rem;
+    }
+
+    body {
+        padding: 1rem;
+
+        header {
+
+            nav {
+                top: -10%;
+
+                button {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+
+            form {
+                margin-top: 10%;
+                gap: 2.5rem;
+
+                .inputSection {
+                    width: 100%;
+                    gap: 1rem;
+
+                    label {
+                        .inputLabel {
+                            font-size: .7rem;
+                        }
+
+                        .input {
+                            padding: .7rem 1rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                }
+
+                .lowerSection {
+                    position: relative;
+
+                    hr {
+                        color: hsl(0, 1%, 44%);
+                        background-color: hsl(0, 1%, 44%);
+                        width: 100%;
+                    }
+
+                    .submitBtn {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin-inline: auto;
+                        width: 4rem;
+                        height: 4rem;
+
+                        img {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            .output {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
 }
